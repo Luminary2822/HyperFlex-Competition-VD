@@ -256,12 +256,31 @@
 										}
 								 },
 								 indicator: [
-										{ name: '面食', max: 20000},
-										{ name: '肉类', max: 26000},
-										{ name: '蔬菜', max: 40000},
-										{ name: '甜点', max: 48000},
-										{ name: '焙烤', max: 52000},
-										{ name: '豆制', max: 25000}
+										// { name: '面食', max: 20000},
+										// { name: '肉类', max: 26000},
+										// { name: '蔬菜', max: 40000},
+										// { name: '甜点', max: 48000},
+										// { name: '焙烤', max: 52000},
+										// { name: '豆制', max: 25000}
+										function(){
+										 var arrNum = [];
+										 $.ajax(
+										 {
+											type: "post",
+											url: "" ,
+											dataType : 'json',
+											async:true,
+											success: function (result) {
+												var typeName = result.name;
+												var typeMax = result.max;
+												 for (var i = 0; i < typeName.length; i++)
+												 {
+															arrNum.push({"name":typeName[i],"max": typeMax[i]});
+													}
+											}
+												 });
+												 return arrNum;
+									 }
 								 ]
 						},
 						 series: [{
@@ -285,7 +304,28 @@
 								 },
 								 data : [
 											{
-												 value : [15000, 18000, 32000, 12000, 45000, 22000],
+												 // value : [15000, 18000, 32000, 12000, 45000, 22000],
+												 function(){
+													var arrNum = [];
+													var value=[];
+													$.ajax(
+													{
+													 type: "post",
+													 url: "" ,
+													 dataType : 'json',
+													 async:true,
+													 success: function (result) {
+														 var typeName = result.name;
+														 var typeNum=result.num;
+															for (var i = 0; i < typeName.length; i++)
+															{
+																	 value.push(typeNum[i]);
+														 }
+														 arrNum.push({value});
+														 }
+													 });
+															return arrNum;
+												}
 										 }
 								 ]
 						 }]
@@ -309,12 +349,31 @@
 										}
 								 },
 								 indicator: [
-										{ name: '面食', max: 20000},
-										{ name: '肉类', max: 26000},
-										{ name: '蔬菜', max: 40000},
-										{ name: '甜点', max: 48000},
-										{ name: '焙烤', max: 52000},
-										{ name: '豆制', max: 25000}
+										// { name: '面食', max: 20000},
+										// { name: '肉类', max: 26000},
+										// { name: '蔬菜', max: 40000},
+										// { name: '甜点', max: 48000},
+										// { name: '焙烤', max: 52000},
+										// { name: '豆制', max: 25000}
+										function(){
+										 var arrNum = [];
+										 $.ajax(
+										 {
+											type: "post",
+											url: "" ,
+											dataType : 'json',
+											async:true,
+											success: function (result) {
+												var typeName = result.name;
+												var typeMax = result.max;
+												 for (var i = 0; i < typeName.length; i++)
+												 {
+															arrNum.push({"name":typeName[i],"max": typeMax[i]});
+													}
+											}
+												 });
+												 return arrNum;
+									 }
 								 ]
 						},
 						 series: [{
@@ -338,7 +397,28 @@
 								 },
 								 data : [
 											{
-												 value : [8000, 20000, 40000, 22000, 38000, 15000],
+												 // value : [8000, 20000, 40000, 22000, 38000, 15000],
+												 function(){
+												 var arrNum = [];
+												 var value=[];
+												 $.ajax(
+												 {
+													type: "post",
+													url: "" ,
+													dataType : 'json',
+													async:true,
+													success: function (result) {
+														var typeName = result.name;
+														var typeNum=result.num;
+														 for (var i = 0; i < typeName.length; i++)
+														 {
+																	value.push(typeNum[i]);
+														}
+														arrNum.push({value});
+														}
+													});
+														 return arrNum;
+											 }
 										 }
 								 ]
 						 }]
@@ -362,12 +442,31 @@
 										}
 								 },
 								 indicator: [
-										{ name: '面食', max: 20000},
-										{ name: '肉类', max: 26000},
-										{ name: '蔬菜', max: 40000},
-										{ name: '甜点', max: 48000},
-										{ name: '焙烤', max: 52000},
-										{ name: '豆制', max: 25000}
+										// { name: '面食', max: 20000},
+										// { name: '肉类', max: 26000},
+										// { name: '蔬菜', max: 40000},
+										// { name: '甜点', max: 48000},
+										// { name: '焙烤', max: 52000},
+										// { name: '豆制', max: 25000}
+										function(){
+										 var arrNum = [];
+										 $.ajax(
+										 {
+											type: "post",
+											url: "" ,
+											dataType : 'json',
+											async:true,
+											success: function (result) {
+												var typeName = result.name;
+												var typeMax = result.max;
+												 for (var i = 0; i < typeName.length; i++)
+												 {
+															arrNum.push({"name":typeName[i],"max": typeMax[i]});
+													}
+											}
+												 });
+												 return arrNum;
+									 }
 								 ]
 						},
 						 series: [{
@@ -391,7 +490,28 @@
 								 },
 								 data : [
 											{
-												 value : [15000, 18000, 30000, 18000, 35000, 8000],
+												 // value : [15000, 18000, 30000, 18000, 35000, 8000],
+												 function(){
+												var arrNum = [];
+												var value=[];
+												$.ajax(
+												{
+												 type: "post",
+												 url: "" ,
+												 dataType : 'json',
+												 async:true,
+												 success: function (result) {
+													 var typeName = result.name;
+													 var typeNum=result.num;
+														for (var i = 0; i < typeName.length; i++)
+														{
+																 value.push(typeNum[i]);
+													 }
+													 arrNum.push({value});
+													 }
+												 });
+														return arrNum;
+											}
 										 }
 								 ]
 						 }]
