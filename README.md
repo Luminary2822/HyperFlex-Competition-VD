@@ -1,6 +1,7 @@
-# Visualization-Data
-数据可视化页面
+# HyperFlex Competition VD(Visualization Data)
 
-1.算法分析推荐菜谱的争取率和错误率
+服务外包比赛，基于天猫精灵的智能厨房生活后台数据可视化页面
+
+1.菜谱推荐算法的召回率
 
 2.用户早中晚的饮食习惯
